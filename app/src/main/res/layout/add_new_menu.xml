@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:textColorHint="@color/black"
+            android:text=""
+            android:hint="Nhập tên sản phẩm..."
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true"
+            >
+
+
+
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <LinearLayout
+            android:weightSum="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:text="Chọn sản phẩm"
+                android:textColor="@color/white"
+                android:layout_below="@+id/text_input_password"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/reg_btnsignup"
+
+
+                ></Button>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:text="Tải lên"
+                android:textColor="@color/white"
+                android:layout_below="@+id/text_input_password"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/reg_btnsignin"
+
+
+                ></Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

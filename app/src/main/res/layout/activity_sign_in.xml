@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignIn">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/phone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPhone"
+            android:background="@drawable/reg_edtext_style"
+            android:padding="18dp"
+            android:inputType="phone"
+            android:hint="Nhập số điện thoại..."
+            android:text="0352"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_input_password"
+        app:errorEnabled="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_edtext_style"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:text="654321"
+            android:padding="18dp"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:text="Đăng Nhập"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text_input_password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/reg_btnsignin"
+
+
+        ></Button>
+
+<!--    <TextView-->
+<!--        android:id="@+id/nothave_account"-->
+<!--        android:text="Không có tài khoản? Đăng ký"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_below="@+id/btnSignIn"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+</RelativeLayout>
